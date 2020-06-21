@@ -1,0 +1,17 @@
+spring.application.name: consumer
+
+
+spring:
+  profiles:
+    active:  local
+---
+spring:
+  profiles: local
+  kafka:
+    template:
+      default-topic: test-out-0
+    consumer:
+      bootstrap-servers: localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: test-events-listener-group
