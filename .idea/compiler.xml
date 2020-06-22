@@ -8,12 +8,26 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.12/48e4e5d60309ebd833bc528dcf77668eab3cd72c/lombok-1.18.12.jar" />
         </processorPath>
-        <module name="cloud-stream.supplier.main" />
-        <module name="cloud-stream.processor.main" />
-        <module name="cloud-stream.consumer.main" />
+        <module name="boot-kafka.processor.main" />
+        <module name="boot-kafka.consumer.main" />
+        <module name="boot-kafka.supplier.main" />
+        <module name="boot-kafka.sink.main" />
+        <module name="boot-kafka.source.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
+      <module name="cloud-stream.consumer" target="1.8" />
+      <module name="cloud-stream.consumer.main" target="1.8" />
+      <module name="cloud-stream.consumer.test" target="1.8" />
+      <module name="cloud-stream.processor" target="1.8" />
+      <module name="cloud-stream.processor.main" target="1.8" />
+      <module name="cloud-stream.processor.test" target="1.8" />
+      <module name="cloud-stream.supplier" target="1.8" />
+      <module name="cloud-stream.supplier.main" target="1.8" />
+      <module name="cloud-stream.supplier.test" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="demo.main" target="1.8" />
+      <module name="demo.test" target="1.8" />
       <module name="processor" target="1.8" />
       <module name="processor.main" target="1.8" />
       <module name="processor.test" target="1.8" />

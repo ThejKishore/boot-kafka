@@ -12,6 +12,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/consumer" />
             <option value="$PROJECT_DIR$/processor" />
+            <option value="$PROJECT_DIR$/sink" />
+            <option value="$PROJECT_DIR$/source" />
             <option value="$PROJECT_DIR$/supplier" />
           </set>
         </option>
@@ -26,6 +28,23 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/consumer" />
             <option value="$PROJECT_DIR$/processor" />
+            <option value="$PROJECT_DIR$/sink" />
+            <option value="$PROJECT_DIR$/source" />
+            <option value="$PROJECT_DIR$/supplier" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/source" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/consumer" />
+            <option value="$PROJECT_DIR$/processor" />
+            <option value="$PROJECT_DIR$/sink" />
+            <option value="$PROJECT_DIR$/source" />
             <option value="$PROJECT_DIR$/supplier" />
           </set>
         </option>

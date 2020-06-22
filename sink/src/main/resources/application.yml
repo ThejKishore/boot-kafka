@@ -1,0 +1,52 @@
+#spring:
+#  cloud:
+#    stream:
+#      default-binder: kafka
+#      kafka:
+#        binder:
+#          brokers:
+#          - localhost:9092
+#      bindings:
+#        input:
+#         binder: kafka
+#         destination: test
+#         content-type: text/plain
+#         group: input-group-1
+#        output:
+#          binder: kafka
+#          destination: test
+#          group: output-group-1
+#          content-type: text/plain
+
+#spring:
+#  cloud:
+#    stream:
+#      bindings:
+#        input:
+#          destination: queue.log.messages
+#          binder: local_rabbit
+#        output:
+#          destination: queue.pretty.log.messages
+#          binder: local_rabbit
+#      binders:
+#        local_rabbit:
+#          type: rabbit
+#          environment:
+#            spring:
+#              rabbitmq:
+#                host: <host>
+#                port: 5672
+#                username: <username>
+#                password: <password>
+#                virtual-host: /
+
+spring:
+  application:
+    name:  sink
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: test-topic
+server:
+  port:  9090
